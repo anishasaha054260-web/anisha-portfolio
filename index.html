@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anisha Saha | Web Developer</title>
+  <meta name="description" content="Anisha Saha, B.Tech IT student at RCCIIT Kolkata. Full stack web developer who solves DSA problems in C++ and Java.">
+  <meta name="theme-color" content="#0c090d">
+  <meta property="og:title" content="Anisha Saha | Web Developer">
+  <meta property="og:description" content="B.Tech IT @ RCCIIT. I build full stack web apps and solve DSA problems in C++ and Java.">
+  <meta property="og:image" content="assets/anisha-full.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230c090d'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia' font-style='italic' font-size='40' fill='%23ff6b9d'%3Ea%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Syne:wght@600;700;800&display=swap">
+  <link rel="preload" as="image" href="assets/anisha-full.webp">
+  <link rel="stylesheet" href="styles.css?v=8">
+  <script>
+    (function (d) {
+      d.classList.add('js');
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('motion');
+      // Failsafe: if scripts never run, show the page anyway
+      setTimeout(function () { if (!window.__ready) { d.classList.remove('motion', 'js'); } }, 6000);
+    })(document.documentElement);
+  </script>
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="vendor/ScrollTrigger.min.js" defer></script>
+  <script src="vendor/lenis.min.js" defer></script>
+  <script src="app.js?v=8" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader__name"><span>A</span><span>n</span><span>i</span><span>s</span><span>h</span><span>a</span></div>
+    <div class="loader__count"><span class="loader__num">0</span>%</div>
+    <div class="loader__bar"><i></i></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label"></span></div></div>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#top" class="nav__logo" data-magnetic>anisha<em>.</em></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#dsa">DSA</a>
+      <a href="#now">Now</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="nav__k" data-palette aria-label="Open command menu" aria-haspopup="dialog"><kbd data-mod>&#8984;</kbd><kbd>K</kbd></button>
+      <a href="#contact" class="nav__status" data-magnetic><i></i>Open to internships</a>
+    </div>
+    <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#dsa">DSA</a>
+      <a href="#viz">Visualizer</a>
+      <a href="#now">Now</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <h1 class="hero__name" aria-label="Anisha Saha">
+        <span class="hero__line hero__line--first" aria-hidden="true">ANISHA</span>
+        <span class="hero__line hero__line--last" aria-hidden="true">SAHA</span>
+      </h1>
+
+      <figure class="hero__photo">
+        <div class="hero__ring" aria-hidden="true"></div>
+        <div class="hero__cut">
+          <img src="assets/anisha-full.webp" alt="Anisha Saha standing with her arms crossed" width="348" height="1156" fetchpriority="high">
+          <span class="hero__sheen" aria-hidden="true"></span>
+        </div>
+      </figure>
+
+      <div class="hero__chips" aria-hidden="true">
+        <span class="chip-pos" style="--x:-27vw;--y:-20vh"><span class="chip" data-depth="1.4"><img src="assets/icons/react.svg" alt="">React</span></span>
+        <span class="chip-pos" style="--x:27vw;--y:-24vh"><span class="chip" data-depth="0.8"><img src="assets/icons/nodejs.svg" alt="">Node.js</span></span>
+        <span class="chip-pos" style="--x:-29vw;--y:14vh"><span class="chip" data-depth="1"><img src="assets/icons/cpp.svg" alt="">C++</span></span>
+        <span class="chip-pos" style="--x:29vw;--y:6vh"><span class="chip" data-depth="1.2"><img src="assets/icons/js.svg" alt="">JavaScript</span></span>
+      </div>
+
+      <div class="hero__meta hero__meta--left">
+        <p class="mono">B.Tech IT &middot; RCCIIT</p>
+        <p class="mono">Kolkata, India <span class="clock" data-clock></span></p>
+      </div>
+
+      <div class="hero__meta hero__meta--right">
+        <p class="hero__intro">Hi, I'm Anisha. I build for the web and I think in
+          <span class="roller" aria-live="polite"><span class="roller__word">C++</span></span>
+        </p>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+        <span class="mono">Scroll</span><i></i>
+      </a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Full stack developer</span><b>&#10038;</b><span>React</span><b>&#10038;</b><span>Node.js</span><b>&#10038;</b><span>DSA in C++ &amp; Java</span><b>&#10038;</b><span>Problem solver</span><b>&#10038;</b>
+        <span>Full stack developer</span><b>&#10038;</b><span>React</span><b>&#10038;</b><span>Node.js</span><b>&#10038;</b><span>DSA in C++ &amp; Java</span><b>&#10038;</b><span>Problem solver</span><b>&#10038;</b>
+      </div>
+    </div>
+
+    <section class="about" id="about">
+      <p class="eyebrow mono">(01) About</p>
+      <p class="about__statement" data-light>
+        I'm an IT undergrad at RCC Institute of Information Technology who likes taking an idea from a blank page to something people can actually click on. Frontend, backend, database, the whole thing. When I'm not building, I'm usually stuck on a DSA problem and refusing to open the solution tab.
+      </p>
+      <div class="about__cards">
+        <article class="card" data-spot>
+          <span class="card__num mono">01</span>
+          <h3>Frontend</h3>
+          <p>Clean, responsive interfaces in React, with the small details that make a UI feel good to use.</p>
+        </article>
+        <article class="card" data-spot>
+          <span class="card__num mono">02</span>
+          <h3>Backend</h3>
+          <p>APIs with Node and Express, data in MongoDB or MySQL, and making the two sides talk properly.</p>
+        </article>
+        <article class="card" data-spot>
+          <span class="card__num mono">03</span>
+          <h3>Problem solving</h3>
+          <p>DSA practice in C++ and Java. Arrays to graphs, one problem at a time.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="section-head">
+        <p class="eyebrow mono">(02) Toolkit</p>
+        <h2 class="title" data-split>Things I build <em>with</em></h2>
+      </div>
+      <div class="bento">
+        <article class="bento__cell bento__cell--wide" data-spot>
+          <h3 class="mono">Frontend</h3>
+          <ul class="stack">
+            <li><img src="assets/icons/html.svg" alt="">HTML</li>
+            <li><img src="assets/icons/css.svg" alt="">CSS</li>
+            <li><img src="assets/icons/js.svg" alt="">JavaScript</li>
+            <li><img src="assets/icons/ts.svg" alt="">TypeScript</li>
+            <li><img src="assets/icons/react.svg" alt="">React</li>
+            <li><img src="assets/icons/nextjs.svg" alt="">Next.js</li>
+            <li><img src="assets/icons/tailwind.svg" alt="">Tailwind</li>
+            <li><img src="assets/icons/bootstrap.svg" alt="">Bootstrap</li>
+          </ul>
+        </article>
+        <article class="bento__cell" data-spot>
+          <h3 class="mono">Backend</h3>
+          <ul class="stack">
+            <li><img src="assets/icons/nodejs.svg" alt="">Node.js</li>
+            <li><img src="assets/icons/express.svg" alt="">Express</li>
+            <li><img src="assets/icons/mongodb.svg" alt="">MongoDB</li>
+            <li><img src="assets/icons/mysql.svg" alt="">MySQL</li>
+          </ul>
+        </article>
+        <article class="bento__cell" data-spot>
+          <h3 class="mono">Languages</h3>
+          <ul class="stack">
+            <li><img src="assets/icons/c.svg" alt="">C</li>
+            <li><img src="assets/icons/cpp.svg" alt="">C++</li>
+            <li><img src="assets/icons/java.svg" alt="">Java</li>
+            <li><img src="assets/icons/js.svg" alt="">JavaScript</li>
+          </ul>
+        </article>
+        <article class="bento__cell bento__cell--wide" data-spot>
+          <h3 class="mono">Tools</h3>
+          <ul class="stack">
+            <li><img src="assets/icons/git.svg" alt="">Git</li>
+            <li><img src="assets/icons/github.svg" alt="">GitHub</li>
+            <li><img src="assets/icons/vscode.svg" alt="">VS Code</li>
+            <li><img src="assets/icons/postman.svg" alt="">Postman</li>
+            <li><img src="assets/icons/figma.svg" alt="">Figma</li>
+            <li><img src="assets/icons/vercel.svg" alt="">Vercel</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="dsa" id="dsa">
+      <div class="dsa__text">
+        <p class="eyebrow mono">(03) DSA</p>
+        <h2 class="title" data-split>Logic <em>first,</em> code second</h2>
+        <p class="dsa__copy">Most of my practice happens in C++ and Java. I like problems where the brute force is obvious and the real answer takes a bit of thinking.</p>
+        <ul class="topics">
+          <li>Arrays</li><li>Strings</li><li>Hashing</li><li>Two pointers</li><li>Linked lists</li><li>Stacks &amp; queues</li><li>Recursion</li><li>Binary search</li><li>Trees</li><li>Graphs</li><li>Dynamic programming</li>
+        </ul>
+      </div>
+      <div class="editor" data-spot>
+        <div class="editor__bar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <div class="editor__tabs" role="tablist" aria-label="Language">
+            <button role="tab" aria-selected="true" data-lang="cpp">two_sum.cpp</button>
+            <button role="tab" aria-selected="false" data-lang="java">TwoSum.java</button>
+          </div>
+        </div>
+        <pre class="editor__code"><code data-code></code><span class="caret" aria-hidden="true"></span></pre>
+        <div class="editor__foot mono"><span>O(n) time</span><span>O(n) space</span><span class="ok">&#10003; Accepted</span></div>
+      </div>
+    </section>
+
+    <section class="viz" id="viz">
+      <div class="section-head">
+        <p class="eyebrow mono">(04) Visualizer</p>
+        <h2 class="title" data-split>Watch it <em>sort</em></h2>
+        <p class="viz__lede">Pick an algorithm and hit play. Every bar is a number, and every step is a real comparison or swap.</p>
+      </div>
+      <div class="viz__box" data-spot>
+        <div class="viz__controls">
+          <div class="viz__algos" role="radiogroup" aria-label="Sorting algorithm">
+            <button role="radio" aria-checked="true" data-algo="bubble">Bubble</button>
+            <button role="radio" aria-checked="false" data-algo="insertion">Insertion</button>
+            <button role="radio" aria-checked="false" data-algo="merge">Merge</button>
+            <button role="radio" aria-checked="false" data-algo="quick">Quick</button>
+          </div>
+          <div class="viz__actions">
+            <label class="viz__speed mono">Speed <input type="range" min="1" max="10" value="6" data-speed></label>
+            <button class="btn btn--ghost" data-shuffle>Shuffle</button>
+            <button class="btn btn--solid" data-play>Play</button>
+          </div>
+        </div>
+        <div class="viz__bars" data-bars aria-hidden="true"></div>
+        <div class="viz__stats mono">
+          <span>Comparisons <b data-cmp>0</b></span>
+          <span>Swaps / writes <b data-swp>0</b></span>
+          <span>Time <b data-big>O(n&sup2;)</b></span>
+          <span class="viz__status" data-status role="status">Ready</span>
+        </div>
+        <div class="viz__legend mono" aria-hidden="true">
+          <span><i class="is-cmp"></i>Comparing</span><span><i class="is-swap"></i>Swapping</span><span><i class="is-pivot"></i>Pivot</span><span><i class="is-done"></i>Sorted</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="now" id="now">
+      <div class="now__pin">
+        <div class="now__head">
+          <p class="eyebrow mono">(05) Right now</p>
+          <h2 class="title">What I'm <em>up to</em></h2>
+        </div>
+        <div class="now__track">
+          <article class="panel">
+            <span class="panel__tag mono">Studying</span>
+            <h3>B.Tech in Information Technology</h3>
+            <p>RCC Institute of Information Technology, Kolkata. Learning the fundamentals properly: OS, DBMS, networks and a lot of programming.</p>
+            <span class="panel__big" aria-hidden="true">01</span>
+          </article>
+          <article class="panel">
+            <span class="panel__tag mono">Building</span>
+            <h3>Full stack web apps</h3>
+            <p>Working with React on the front and Node with Express on the back. My first projects are in progress and will land on GitHub soon.</p>
+            <span class="panel__big" aria-hidden="true">02</span>
+          </article>
+          <article class="panel">
+            <span class="panel__tag mono">Solving</span>
+            <h3>DSA, most days</h3>
+            <p>C++ and Java. Picking a topic, grinding through it, and coming back to the ones that beat me the first time.</p>
+            <span class="panel__big" aria-hidden="true">03</span>
+          </article>
+          <article class="panel panel--accent">
+            <span class="panel__tag mono">Looking for</span>
+            <h3>Internships &amp; collabs</h3>
+            <p>If you're working on something for the web and need an extra pair of hands, I'd love to hear about it.</p>
+            <a href="#contact" class="panel__link" data-magnetic>Get in touch <span aria-hidden="true">&rarr;</span></a>
+            <span class="panel__big" aria-hidden="true">04</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="eyebrow mono">(06) Contact</p>
+      <h2 class="contact__title">
+        <span class="contact__line" data-split>Let's build</span>
+        <span class="contact__line contact__line--serif" data-split>something <em>good.</em></span>
+      </h2>
+      <div class="contact__row">
+        <a class="orb" href="https://www.linkedin.com/in/anisha-saha-955892325/" target="_blank" rel="noopener" data-magnetic data-cursor="Say hi">
+          <span>Say hi on<br>LinkedIn</span>
+        </a>
+        <ul class="contact__links">
+          <li><a href="https://www.linkedin.com/in/anisha-saha-955892325/" target="_blank" rel="noopener" data-hover>LinkedIn <span aria-hidden="true">&nearr;</span></a></li>
+          <li><a href="https://github.com/anishasaha054260-web" target="_blank" rel="noopener" data-hover>GitHub <span aria-hidden="true">&nearr;</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="palette" aria-label="Command menu">
+    <div class="palette__box">
+      <input class="palette__input" type="text" placeholder="Where do you want to go?" aria-label="Search commands" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="true" aria-controls="palette-list">
+      <ul class="palette__list" id="palette-list" role="listbox" data-lenis-prevent></ul>
+      <div class="palette__foot mono"><span>&uarr;&darr; move</span><span>&crarr; select</span><span>esc close</span></div>
+    </div>
+  </dialog>
+
+  <div class="toast mono" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <div class="footer__big" aria-hidden="true">ANISHA SAHA</div>
+    <div class="footer__row mono">
+      <span>&copy; <span data-year>2026</span> Anisha Saha</span>
+      <span>Kolkata <span data-clock></span></span>
+      <a href="#top" data-hover>Back to top &uarr;</a>
+    </div>
+  </footer>
+</body>
+</html>
